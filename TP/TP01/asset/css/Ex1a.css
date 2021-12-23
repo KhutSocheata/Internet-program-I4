@@ -1,0 +1,13 @@
+body{
+    font-family: verdana;
+}
+.wrapper{
+    width:150px;
+    background-color: rgb(233, 220, 220);
+    padding: 100px;
+}
+.wrapper .flying-box{
+    padding: 5px;
+    background-color: rgb(141, 126, 126);
+    text-align: center;
+}

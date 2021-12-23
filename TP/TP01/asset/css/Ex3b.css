@@ -1,0 +1,15 @@
+.wrapper {
+    display: flex;
+    height: 1000px;
+    width: auto;
+    background-color: gray;
+}
+.content { 
+    padding-top: 20px;
+    float: left;
+    display: block;
+    margin: 0 auto;
+    width: clamp(300px,100%,800px); 
+    height: 500px;
+    background-color: yellow;
+}
