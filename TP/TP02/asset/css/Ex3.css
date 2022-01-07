@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#canvasInput,
+#canvasOutput {
+    align-items: center;
+    border: 10px solid rgba(187, 147, 147, 0.7);
+    border-top: 5px solid rgba(153, 153, 153, 0.7);
+    background-color: rgba(0, 0, 0, 0.952);
+}
+
+#canvasOutput {
+    margin-left: 17px;
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.output>span {
+    background-color: rgba(153, 153, 153, 0.7);
+    height: 20px;
+    color: #fafafa;
+    padding: 10px;
+    font-size: large;
+}
+
+.control {
+    background-color: rgba(138, 108, 108, 0.7);
+    width: 620px;
+}
+
+.control>span {
+    color: #fafafa;
+}
+
+.control>div>button {
+    margin-bottom: 5px;
+    color: #000000;
+    border: 2px solid #fafafa;
+    border-radius: 5%;
+    margin-top: 3px;
+}
+
+#start {
+    background-color: rgb(255, 255, 255);
+}
+
+#stop {
+    background-color: rgb(255, 255, 255);
+}
