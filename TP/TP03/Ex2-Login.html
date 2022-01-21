@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login from with Cookies</title>
+    <link rel="stylesheet" href="./asset/css/Ex2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="log_in">
+            <div><img src="./asset/images/User1.png" alt="" /></div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" onclick="if(this.placeholder == 'Email') {this.placeholder = ''}" onBlur="if(this.placeholder == '') {this.placeholder = 'Email'}" />
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password" onclick="if(this.placeholder == 'Password') {this.placeholder = ''}" onBlur="if(this.placeholder == '') {this.placeholder = 'Password'}" />
+            <button type="submit" id="btn_login">Log In</button>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="home">
+            <h2>Welcome to Home Page</h2>
+            <div>You will automatically logged out</div>
+            <div>Keep refreshing your paage</div>
+            <button type="submit" id="btn_logout">Log Out</button>
+        </div>
+    </div>
+    <script src="./asset/js/Ex2.js"> 
+        //Email: gic@gmail.com
+        //Password: Gic123
+    </script>
+       
+    
+</body>
+
+</html>
