@@ -1,0 +1,45 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+h1{
+    padding:10px;
+    margin-left: 550px;
+    margin-right: 550px;
+    border: 1px solid rgba(148, 148, 148, 0.8);
+    background-color: rgb(221, 221, 221);
+    text-align: center;
+}
+.container {
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+.container>h3 {
+    width: 280px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: rgba(156, 156, 156, 0.8) 0px 0px 0px 3px;
+    border-radius: 5px;
+    background-color: rgba(180, 167, 214, .5);
+    font-size: 24px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80vw;
+}
+td,
+th {
+    border: 1px solid rgba(131, 131, 131, 0.8);
+    background-color: rgb(240, 240, 240);
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: rgb(199, 199, 199);
+}
