@@ -1,0 +1,262 @@
+body {
+    background:  rgb(255, 255, 255);
+    margin: 0px;
+    font-family: verdana;
+}
+.font-text {
+    font-family: verdana;
+}
+
+.home_container {
+    position: relative;
+    height: 100%;
+}
+
+.sidebar {
+    width: 22%;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    padding-top: 20px;
+}
+
+.sidebar img {
+    border: 2px solid rgb(255, 138, 138);
+    width: 38%;
+    border-radius: 100px;
+}
+
+.sidebar h4 {
+    color: rgb(148, 148, 148);
+}
+
+.small-icon {
+    background-color: #f1f1f1;
+    padding: 5px;
+}
+
+.spacing-top-logo {
+    margin-top: 50px;
+}
+
+.about {
+    border-left: 9px solid rgb(241, 241, 241);
+    /*background-image: url("../images/home_page_bg_2.jpeg");*/
+    height: 100vh;
+    margin-left: 22%;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+
+.about_mask {
+    height: 100vh;
+    /*opacity: 0.2;
+    background-color: rgba(0, 0, 0, 0.575);*/
+}
+
+.about_text {
+    position: absolute;
+    width: 100%;
+    font-family: Oswald, Helvetica Neue, sans-serif;
+    right: 0;
+    border-left: 9px solid rgb(241, 241, 241);
+}
+
+.about .user_name {
+    font-size: 60px;
+    margin: 0px;
+    padding-top: 80px;
+}
+
+.about .user_role {
+    color: rgb(175, 175, 175);
+}
+
+.about .about_text .table_style {
+    border-spacing: 25px;
+}
+
+.about .about_text .logo table tr th.header {
+    background-color: #ffd000d0;
+    width: 87px;
+    height: 40px;
+    padding-left: 68px;
+}
+
+.about .about_text .logo table tr th.dic {
+    padding-left: 30px;
+}
+
+.about .about_text .logo {
+    padding-top: 40px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.description {
+    padding-left: 90px;
+}
+
+.table-top {
+    border-spacing: 5px;
+}
+
+.table-below {
+    border-spacing: 95px;
+}
+.table-left {
+    margin-left: 0px;
+}
+
+.bgk-fun-facts {
+    background-color: rgb(255, 255, 255);
+    width: 110px;
+    height: 150px;
+}
+
+.card {
+    margin-right: 50px;
+}
+
+.color-icon {
+    color: #afafaf;
+}
+
+.color-logo {
+    filter: opacity(50%);
+}
+
+.msg {
+    position: relative;
+    top: 50px;
+    left: 0px;
+    margin-left: 100px;
+    margin-top: 0px;
+    margin-bottom: 200px;
+    border: 2px solid rgb(197, 197, 197);
+    border-radius: 5px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+.profile-photo {
+    border: 2px solid rgb(197, 197, 197);
+    width: 8%;
+    border-radius: 100px;
+    position: absolute;
+    top: 350px;
+    left: 480px;
+}
+
+.name-profile {
+    width: 8%;
+    position: absolute;
+    top: 397px;
+    left: 615px;
+}
+
+.dic-profile {
+    width: 8%;
+    position: absolute;
+    top: 427px;
+    left: 609px;
+}
+
+.arrow-profile {
+    width: 8%;
+    position: absolute;
+    top: 427px;
+    left: 760px;
+}
+
+.arrow-profile i {
+    background-color: rgb(223, 223, 223);
+    padding: 5px;
+}
+
+#padding_service {
+    padding: 0px 30px 30px 30px;
+}
+
+#col_font {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+}
+
+#col_head {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline rgb(255, 255, 255);
+    border-bottom: solid 3px #ffd000d0;
+    display: inline;
+    padding-bottom: 1px;
+}
+
+#nav {
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+}
+
+#nav li {
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    border-top: 1px solid rgb(226, 226, 226);
+    margin-top: -1px;
+}
+
+#nav li.active {
+    background-color: rgb(241, 241, 241);
+}
+
+#nav li.active a::after {
+    background-color: #ffd000d0;
+    display: block;
+    position: absolute;
+    content: " ";
+    right: 0;
+    bottom: 0;
+    width: 3px;
+    height: 100%;
+}
+
+#nav a {
+    color: black;
+    text-decoration: none;
+}
+
+#padding-img {
+    padding-right: 60px;
+}
+
+#no-spacing {
+    padding: 0px;
+}
+
+#col_spacing {
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+
+.thumbnail {
+    padding-top: 20px;
+    width: 100%;
+    height: 60px;
+}
+
+.card {
+    width: 150px;
+    background-color: #ffffffd0;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
+}
+
+.description-under {
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 35px;
+    color: #ffd000d0;
+}

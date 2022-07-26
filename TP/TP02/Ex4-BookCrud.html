@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./asset/images/Bookpicture.jpg" type="image/x-icon">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="./asset/css/Ex4.css">   
+</head>
+
+<body>
+    <div class="container">
+        <form autocomplete="off" onsubmit="onFormSubmit()">
+            <div class="add">
+                <div class="header-add">Please add new book here!</div>
+
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name_book" placeholder="enter" onclick="if(this.placeholder == 'enter') {this.placeholder = ''}" onBlur="if(this.placeholder == '') {this.placeholder = 'enter'}" />
+                <label for="price">Price</label>
+                <input type="text" name="price" id="price_book" placeholder="$" onclick="if(this.placeholder == '$') {this.placeholder = ''}" onBlur="if(this.placeholder == '') {this.placeholder = '$'}" />
+                <label for="category">Category</label>
+                <input type="text" name="category" id="category_book" placeholder="type" onclick="if(this.placeholder == 'type') {this.placeholder = ''}" onBlur="if(this.placeholder == '') {this.placeholder = 'type'}" />
+                <button type="submit" class="add_book">Add</button>
+                <button type="submit" class="edit_book">update</button>
+            </div>
+        </form>
+        <div class="home" id="add_items">
+            <div class="book-info">Book</div>
+        </div>
+    </div>
+    </div>
+    <script src="./asset/javascript/Ex4.js"></script>
+</body>
+</html>

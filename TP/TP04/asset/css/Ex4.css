@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+*,*:after,*:before{
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body {
+    background-size: cover;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background-color: #8baeafa2;
+}
+img{
+    max-width: 100%;
+}
+#header{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.container{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_ico{
+    display: block;
+    width: 40px;
+    cursor: pointer;
+}
+.main_nav {
+    float: right;
+}
+.main_nav ul{
+    margin: 0;
+    padding: 1px;
+    list-style: none;
+}
+.main_nav ul li{
+    float: left;
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    overflow: hidden;
+}
+.main_nav ul li a {
+    color:black;
+    display: block;
+    line-height: 1.4;
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: smaller;
+}
+.main_nav ul li a:before {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    height: 1px;
+    width: 100%;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.main_nav ul li a:after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.main_nav ul li:hover a:before{left: 0;}
+.main_nav ul li:hover a:after{right: 0;}
+  
+/*This Media Query use for iPad Portrait View*/
+@media only screen and (min-width:768px) and (max-width:991px){
+    .main_nav ul li{ margin: 0 0 0 15px; font-size: 16px; }
+}
+  
+@media screen and (min-width: 768px){
+    .nav_ico{
+        display: none;
+    } 
+}
+/*This Media Query use for Mobile View*/
+@media screen and (max-width: 767px){
+    .nav_ico{ 
+        display: block;
+        position: relative;
+        z-index: 10;
+
+    } 
+    .main_nav {
+        border-bottom-width: 0px;
+        margin-top:3px;
+        position: fixed;
+        left: 0;
+        top: 73px;
+        padding:0;
+        background: #ffffff;
+        z-index: 5;
+        height: calc(100vh - 74px);
+        width: calc(100% - 150px);
+        transition: all 0.3s ease-out;
+        transform: translateX(-100%);
+    }
+    .main_nav ul li {
+        border-bottom-width: 0px;
+        margin-top:3px;
+        float: none;
+        margin: 0 !important;
+        padding: 0 !important;
+        text-align: center;
+    }
+    .main_nav ul li a {
+        margin-left: 0px;
+        color: rgb(22, 22, 22);
+        padding: 10px;
+    } 
+    .main_nav:after {
+        content: "";
+        position: absolute;
+        left: 100%;
+        top: 0;
+        height: 100%;
+        width: 0;
+        background: rgba(0, 0, 0, 0.7);
+    }
+    .main_nav.active{
+        transform: translateX(0%);
+    }
+    .main_nav.active:after {
+        width: 1000%;
+    }
+}
